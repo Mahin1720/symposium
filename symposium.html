@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Karuvingyan</title>
+	<style>
+
+		/* Styling the body */
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		
+		/* Styling section, giving background
+			image and dimensions */
+		section {
+			width: 100%;
+			height: 100vh;
+			background:
+url(about-bg.jpg);
+			background-size:contain;
+		}
+		
+		/* Styling the left floating section */
+		section .leftBox {
+			width: 50%;
+			height: 100%;
+			float: left;
+			padding: 25px;
+			padding-top: 30px;
+			padding-bottom: 5px;
+			box-sizing: border-box;
+			display: block;
+		}
+		
+		/* Styling the background of
+			left floating section */
+		section .leftBox .content {
+			color: #fff;
+			background: rgba(210, 194, 194, 0.5);
+			padding: 40px;
+			padding-top: 10px;
+			padding-bottom: 5px;
+			transition: .5s;
+		}
+
+		section .leftBox .content h3 span {
+			color:  rgb(37, 34, 34) ;
+			font-size: 25px;
+		} 
+		
+		/* Styling the hover effect
+			of left floating section */
+		section .leftBox .content:hover {
+			background: #757482;
+			opacity: 0.7;
+			cursor: pointer;
+		}
+		
+		/* Styling the header of left
+			floating section */
+		section .leftBox .content h1 {
+			margin: 0;
+			padding-bottom: 10px;
+			font-size: 50px;
+			text-transform: uppercase;
+			line-height: 1.5;
+		}
+		/* Styling the paragraph of
+			left floating section */
+		section .leftBox .content p {
+			margin: 10px 0 0;
+			padding: 0;
+			color: black;
+			line-height: 1.8;
+			font-size: 20px;
+			font-weight: 700;
+		}
+		
+		/* Styling the three events section */
+		section .events {
+			position: relative;
+			width: 50%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			float: right;
+			box-sizing: border-box;
+			font-weight: 600;
+		}
+		
+		section .leftBox .content p span{
+			color: rgb(39, 32, 26);
+			border: 3px solid;
+			border-color: rgb(154, 202, 106);
+			font-size: larger;
+			padding: 10px;
+
+		}
+		/* Styling the links of
+		the events section */
+		section .events ul {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			margin: 0;
+			padding: 40px;
+			box-sizing: border-box;
+		}
+		
+		/* Styling the lists of the event section */
+		section .events ul li {
+			list-style: none;
+			background: #fff;
+			box-sizing: border-box;
+			height: 220px;
+			margin: 15px 0;
+			border: 5px solid black;
+			box-shadow: inset 2px 2px 2px rgb(10, 10, 10);
+		}
+		
+		/* Styling the time class of events section */
+		section .events ul li .time {
+			position: relative;
+			padding: 20px;
+			background: #262626;
+			box-sizing: border-box;
+			width: 30%;
+			height: 100%;
+			float: left;
+			text-align: center;
+			transition: .5s;
+		}
+		
+		/* Styling the hover effect
+			of events section */
+		section .events ul li:hover .time {
+			opacity: 0.9;
+		}
+		
+		/* Styling the header of time
+			class of events section */
+		section .events ul li .time h2 {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 25px;
+			line-height: 1.5;
+		}
+		
+		/* Styling the texts of time
+		class of events section */
+		section .events ul li .time h2 span {
+			font-size: 20px;
+		}
+		
+		/* Styling the details
+		class of events section */
+		section .events ul li .details {
+			padding: 20px;
+			padding-top: 5px;
+			background: rgb(219, 202, 202);
+			box-sizing: border-box;
+			width: 70%;
+			height: 100%;
+			float: left;
+			line-height: 1.5;
+		}
+		
+		/* Styling the header of the
+		details class of events section */
+		section .events ul li .details h3 {
+			position: relative;
+			margin: 0;
+			padding: 0;
+			font-size: 22px;
+			border: 5px;
+			bo-color: aqua;
+		}
+		
+		/* Styling the lists of details
+		class of events section */
+		section .events ul li .details p {
+			position: relative;
+			margin: 5px 0 0;
+			padding: 0;
+			font-size: 16px;
+		}
+		
+		/* Styling the links of details
+		class of events section */
+		section .events ul li .details a {
+			display: inline-block;
+			text-decoration: none;
+			padding: 5px 5px;
+			border: 1.5px solid #262626;
+			margin-top: 8px;
+			font-size: 15px;
+			transition: .5s;
+		}
+		
+		/* Styling the details class's hover effect */
+		section .events ul li .details a:hover {
+			background: rgb(75, 75, 217);
+			color: white;
+			border-color: white;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<section>
+		
+		<div class="leftBox">
+			<div class="content">
+				<h3>
+					<span>A ONE-DAY NATIONAL LEVEL TECHNICAL SYMPOSIUM</span>
+				</h3>
+
+				<h1>
+					KARUVINGYAN 2022
+				</h1>
+				
+<p>
+	EVENTS:</br>
+	1.KIVIZ (Technical Quizz)</br>
+	2.LOGICAL BUG (Circuit Debugging)</br>
+	3.TECH CHASE (Technical Treasure Hunt)</br>
+	4.TECH-CONNECTION (Technical Connections)</br>
+	5.CURIOUS LINE FOLLOWER (Arduino Bot)</br>
+
+</br>
+<span>Date : 17-09-2022 </span></br>
+</br>
+<h1>
+	<sapn>TOTAL CASH PRIZE :</br>
+	    &#8377; 30,000 /-</sapn>
+</h1>
+</p>
+
+			</div>
+		</div>
+		<div class="events">
+			<ul>
+				<li>
+					<div class="time">
+						<h2>
+							INSTRUCTION <span>TO</span><br>STUDENTS
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+							Entry :
+						</h3>
+						
+<p>
+	1.Students have to register only through online and confirmation mail will be send to participants.For registration below link.</br>
+	<a href="https://forms.gle/vAJFxoUVMgckSnPu6" >To Register</a></br>
+	2.No spot registration allowed.</br>
+	3.Last Date for registration : 10-09-2022.
+						</p>	
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+
+				<li>
+					<div class="time">
+						<h2>
+							TRANSPORT <br><span>AND</span></br>FOOD
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+							Transport :
+						</h3>
+						
+<p>
+							1.Transport is available from all parts of the city by our college bus.</br>
+							2.No TA/DA will be provided.
+							<h3>
+								Food :
+							</h3>
+							3.Breakfast and Lunch will be provided by our college.
+						</p>
+					</div>
+					<div style="clear:both;"></div>
+				</li>
+
+				<li>
+					<div class="time">
+						<h2>
+							CONTACT </br>DETAILS 
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+                            Venue :
+						</h3>
+						
+<p>
+							ST.JOSEPH'S COLLEGE OF ENGINEERING</br>
+							<h3>
+								Contact :
+							</h3>
+							Mr.Shenthil Raghavan - 8300476495</br>
+							Mr.Aravazhi - 8220012156</br>
+							Ms.Karapagavalli - 6385044668</br>
+							Mr.Sharon Rosano - 6369115448
+
+						</p>
+					</div>
+					<div style="clear:both;"></div>
+				</li>
+			</ul>
+		</div>
+	</section>
+</body>
+
+</html>
